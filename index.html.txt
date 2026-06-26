@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vestra | لباس زنانه</title>
+<style>
+body{
+margin:0;
+font-family:tahoma;
+background:#111;
+color:#fff;
+}
+header{
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#000;
+}
+.logo{
+font-size:32px;
+font-weight:bold;
+color:#d4af37;
+}
+.hero{
+height:70vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=1200') center/cover;
+}
+.hero h1{
+font-size:48px;
+margin:0;
+}
+.hero p{
+font-size:20px;
+}
+.btn{
+padding:15px 35px;
+background:#d4af37;
+color:#000;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:40px;
+}
+.card{
+background:#222;
+border-radius:15px;
+overflow:hidden;
+}
+.card img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+.card h3{
+padding:10px;
+}
+.card p{
+padding:0 10px;
+}
+.card button{
+margin:10px;
+width:calc(100% - 20px);
+padding:12px;
+background:#d4af37;
+border:none;
+font-weight:bold;
+cursor:pointer;
+}
+footer{
+text-align:center;
+padding:20px;
+background:#000;
+margin-top:30px;
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">VESTRA</div>
+<div>لباس زنانه</div>
+</header>
+
+<section class="hero">
+<h1>استایل خاص، انتخاب خاص</h1>
+<p>جدیدترین کالکشن لباس زنانه</p>
+<a href="#shop" class="btn">مشاهده محصولات</a>
+</section>
+
+<section id="shop" class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600">
+<h3>مانتو شیک</h3>
+<p>۱,۴۹۰,۰۰۰ تومان</p>
+<button>افزودن به سبد خرید</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600">
+<h3>شومیز زنانه</h3>
+<p>۸۹۰,۰۰۰ تومان</p>
+<button>افزودن به سبد خرید</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600">
+<h3>ست تابستانی</h3>
+<p>۱,۷۹۰,۰۰۰ تومان</p>
+<button>افزودن به سبد خرید</button>
+</div>
+
+</section>
+
+<footer>
+© 2026 VESTRA
+</footer>
+
+</body>
+</html>
