@@ -119,4 +119,20 @@ behavior:"smooth"
 
 });
 
-}
+}const toast=document.getElementById("toast");
+
+buttons.forEach(btn=>{
+
+btn.addEventListener("click",()=>{
+
+toast.classList.add("show");
+
+setTimeout(()=>{
+
+toast.classList.remove("show");
+
+},2000);
+
+});
+
+});
