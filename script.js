@@ -17,4 +17,26 @@ current=0;
 slides[current].classList.add("active");
 
 }
-setInterval(showSlide,4000);<script src="script.js"></script>
+setInterval(showSlide,4000);<script src="script.js"></script>let cart=0;
+
+const buttons=document.querySelectorAll(".add-cart");
+
+buttons.forEach(btn=>{
+
+btn.onclick=function(){
+
+cart++;
+
+document.getElementById("cart-count").innerText=cart;
+
+this.innerText="✅ اضافه شد";
+
+setTimeout(()=>{
+
+this.innerText="افزودن به سبد خرید";
+
+},1000);
+
+}
+
+});
