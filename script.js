@@ -51,4 +51,46 @@ menuBtn.onclick=function(){
 
 nav.classList.toggle("active");
 
+}const favs=document.querySelectorAll(".favorite");
+
+favs.forEach(item=>{
+
+item.onclick=function(){
+
+this.classList.toggle("active");
+
+if(this.classList.contains("active")){
+
+this.innerHTML="♥";
+
+}else{
+
+this.innerHTML="♡";
+
+}
+
+}
+
+});const search=document.getElementById("search");
+
+search.onkeyup=function(){
+
+let value=this.value.toLowerCase();
+
+document.querySelectorAll(".card").forEach(card=>{
+
+let title=card.querySelector("h3").innerText.toLowerCase();
+
+if(title.includes(value)){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
 }
