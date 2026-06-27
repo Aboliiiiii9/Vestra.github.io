@@ -203,4 +203,30 @@ modal.style.display="none";
 
 }
 
+}document.querySelectorAll(".sizes button").forEach(btn=>{
+
+btn.onclick=function(){
+
+document.querySelectorAll(".sizes button").forEach(b=>b.style.background="#f5f5f5");
+
+document.querySelectorAll(".sizes button").forEach(b=>b.style.color="#000");
+
+this.style.background="#ff4f87";
+
+this.style.color="#fff";
+
 }
+
+});
+
+document.querySelectorAll(".color").forEach(c=>{
+
+c.onclick=function(){
+
+document.querySelectorAll(".color").forEach(x=>x.style.border="2px solid #ddd");
+
+this.style.border="3px solid #ff4f87";
+
+}
+
+});
