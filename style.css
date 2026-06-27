@@ -115,4 +115,54 @@ footer{
 padding:40px;
 text-align:center;
 background:#000;
+}html{
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(180deg,#fff7fb,#ffeef6);
+color:#333;
+}
+
+header{
+background:rgba(255,255,255,.9);
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.logo{
+color:#ff4f87;
+}
+
+nav a{
+color:#444;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ff4f87;
+}
+
+.btn{
+background:#ff4f87;
+color:#fff;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.card{
+background:#fff;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card button{
+background:#ff4f87;
+color:white;
+border-radius:30px;
+}
+
+.card button:hover{
+opacity:.9;
 }
