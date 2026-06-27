@@ -165,4 +165,30 @@ border-radius:30px;
 
 .card button:hover{
 opacity:.9;
+}.header-icons{
+display:flex;
+gap:18px;
+font-size:24px;
+cursor:pointer;
+}
+
+.header-icons span{
+transition:.3s;
+}
+
+.header-icons span:hover{
+transform:scale(1.2);
+color:#ff4f87;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:34px;
+font-weight:bold;
+}
+
+header{
+border-bottom:1px solid rgba(255,255,255,.15);
 }
