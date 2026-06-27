@@ -39,4 +39,16 @@ this.innerText="افزودن به سبد خرید";
 
 }
 
-});
+});<div class="menu-btn" id="menu-btn">
+
+☰
+
+</div>const menuBtn=document.getElementById("menu-btn");
+
+const nav=document.getElementById("nav");
+
+menuBtn.onclick=function(){
+
+nav.classList.toggle("active");
+
+}
