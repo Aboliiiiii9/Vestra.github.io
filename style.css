@@ -955,4 +955,101 @@ text-decoration:none;
 
 font-weight:bold;
 
+}body{
+font-family:'Vazirmatn',sans-serif;
+}
+
+.shop-title{
+
+padding:140px 20px 60px;
+
+text-align:center;
+
+}
+
+.shop-title h1{
+
+font-size:48px;
+
+color:#ff4f87;
+
+margin-bottom:15px;
+
+}
+
+.shop-title p{
+
+color:#666;
+
+font-size:18px;
+
+}.top-bar{
+background:#ff4f87;
+color:white;
+text-align:center;
+padding:12px;
+font-size:15px;
+font-weight:600;
+animation:slideDown .8s;
+}
+
+@keyframes slideDown{
+from{
+transform:translateY(-100%);
+}
+to{
+transform:translateY(0);
+}
+}.btn{
+
+padding:14px 34px;
+
+border:none;
+
+border-radius:35px;
+
+background:linear-gradient(135deg,#ff4f87,#ff7eb3);
+
+color:white;
+
+font-size:16px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.35s;
+
+box-shadow:0 10px 25px rgba(255,79,135,.35);
+
+}
+
+.btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 15px 35px rgba(255,79,135,.45);
+
+}.card{
+
+overflow:hidden;
+
+}
+
+.card img{
+
+transition:.5s;
+
+}
+
+.card:hover img{
+
+transform:scale(1.08);
+
+}
+
+.card:hover{
+
+box-shadow:0 20px 45px rgba(0,0,0,.15);
+
 }
