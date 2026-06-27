@@ -135,4 +135,72 @@ toast.classList.remove("show");
 
 });
 
+});const filterBtns=document.querySelectorAll(".filter-btn");
+
+filterBtns.forEach(btn=>{
+
+btn.onclick=function(){
+
+document.querySelector(".filter-btn.active")?.classList.remove("active");
+
+this.classList.add("active");
+
+const category=this.dataset.filter;
+
+document.querySelectorAll(".card").forEach(card=>{
+
+if(category==="all" || card.dataset.category===category){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
 });
+
+}
+
+});const modal=document.getElementById("productModal");
+
+const modalImg=document.getElementById("modalImg");
+
+const modalTitle=document.getElementById("modalTitle");
+
+const modalPrice=document.getElementById("modalPrice");
+
+document.querySelectorAll(".card").forEach(card=>{
+
+card.onclick=function(e){
+
+if(e.target.tagName==="BUTTON") return;
+
+modal.style.display="flex";
+
+modalImg.src=this.querySelector("img").src;
+
+modalTitle.innerText=this.querySelector("h3").innerText;
+
+modalPrice.innerText=this.querySelector("p").innerText;
+
+}
+
+});
+
+document.querySelector(".close").onclick=function(){
+
+modal.style.display="none";
+
+}
+
+window.onclick=function(e){
+
+if(e.target==modal){
+
+modal.style.display="none";
+
+}
+
+}
