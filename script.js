@@ -229,4 +229,67 @@ this.style.border="3px solid #ff4f87";
 
 }
 
-});
+});const themeBtn=document.getElementById("theme-btn");
+
+themeBtn.onclick=function(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+themeBtn.innerHTML="☀️";
+}else{
+themeBtn.innerHTML="🌙";
+}
+
+}if(localStorage.getItem("theme")=="dark"){
+document.body.classList.add("dark");
+themeBtn.innerHTML="☀️";
+}
+
+themeBtn.onclick=function(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark")){
+
+localStorage.setItem("theme","dark");
+
+themeBtn.innerHTML="☀️";
+
+}else{
+
+localStorage.setItem("theme","light");
+
+themeBtn.innerHTML="🌙";
+
+}
+
+}window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+document.getElementById("loader").style.display="none";
+
+},1000);
+
+});function applyCoupon(){
+
+const code=document.getElementById("coupon").value;
+
+const message=document.getElementById("coupon-message");
+
+if(code==="VESTRA20"){
+
+message.innerHTML="🎉 کد تخفیف با موفقیت اعمال شد.";
+
+message.style.color="green";
+
+}else{
+
+message.innerHTML="❌ کد تخفیف نامعتبر است.";
+
+message.style.color="red";
+
+}
+
+}
